@@ -23,3 +23,6 @@ venv/
 vendor/bundle/
 .bundle/
 *.gem
+
+# Ignore world map json files
+*.json
