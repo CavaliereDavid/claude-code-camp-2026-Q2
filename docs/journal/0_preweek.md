@@ -3,8 +3,12 @@
 ## Technical Goal
 
 - [ ] Build an agent with an sdk and after understanding how to implement it try to build my own agent without using one.
-- [ ] I want to experiment MUD by using my phone, by using Haven app (f-droid) create a connection and play the game
-- [ ] Next step is to use openclaw to use the game
+- [x] I want to experiment MUD by using my phone, by using Haven app (f-droid) create a connection and play the game
+  - [ ] Next step is to use openclaw to use the game
+- [ ] Use open models to evaluate
+  - [x] Use llama.cpp 
+  - [x] Enhance open models on linux with [libopenblas-dev](https://github.com/OpenMathLib/OpenBLAS/tree/develop)
+  - [ ] like FinOps define a cost usage for all coding harness even those that are using open models by following this simple model: **request** | **token usage** | **time spent** |
 ## Technical Uncertainty
 
 My own ability to implement it. Doing it with AI is easy but I want to make the most and delegate where I can.
@@ -63,6 +67,15 @@ sudo systemctl status ssh
 
 
 3. Technical goal **Use OpenClaw**:
+
+
+4. Technical goal **Use open models to evaluate**:
+I had already installed llama.cpp to evaluate some local models.
+
+### Improve local models on linux with explanation.
+
+- BLAS libraries improve matrix multiplication performance on CPUs
+- Accelerate inference with the help of the CUDA Toolkit
 
 ## Technical Conclusions
 
