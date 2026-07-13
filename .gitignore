@@ -4,3 +4,22 @@
 # Environment / secrets
 .env
 .env.local
+
+# Package manager caches / build output
+node_modules
+dist
+.vite
+.parcel-cache
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+
+# Ruby
+vendor/bundle/
+.bundle/
+*.gem
