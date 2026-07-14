@@ -8,6 +8,8 @@
 - [ ] Use open models to evaluate
   - [x] Use llama.cpp 
   - [x] Enhance open models on linux with [libopenblas-dev](https://github.com/OpenMathLib/OpenBLAS/tree/develop)
+  - [x] Launch llama-server to provision model
+  - [x] Learn to use an open agentic harness (eg. OpenCode)
   - [ ] like FinOps define a cost usage for all coding harness even those that are using open models by following this simple model: **request** | **token usage** | **time spent** |
 ## Technical Uncertainty
 
@@ -70,8 +72,27 @@ sudo systemctl status ssh
 3. Technical goal **Use OpenClaw**:
 
 
-4. Technical goal **Use open models to evaluate**:
+4. Technical goal **Use open models**:
 I had already installed llama.cpp to evaluate some local models.
+To get started with open models it requires a lot of setup. Ollama would have been the easier and most immediate solution.
+
+#### Running my local model from huggingface
+```zsh
+llama cli -hf ggml-org/gemma-4-26B-A4B-it-GGUF:Q8_0
+```
+
+#### Launch llama-server
+```zsh
+llama cli -hf ggml-org/gemma-4-26B-A4B-it-GGUF:Q8_0
+```zsh
+./build/bin/llama-server 
+```
+<img src="images/llama-server.png" alt="llama-server" height="300">
+
+##### Running my model
+<img src="images/runningMyModel.png" alt="llama-server-with-my-model" height="300">
+
+##### Creating user preferences for opencode opencode.json and MASTER.md
 
 ### Improve local models on linux with explanation.
 
@@ -79,6 +100,7 @@ I had already installed llama.cpp to evaluate some local models.
 - Accelerate inference with the help of the CUDA Toolkit
 
 5. Technical goal **Choosing the right model from HuggingFace**:
+
 I had an hard time choosing the category that would fit my needs.
 There are many categories and the one I had a look into where:
 - Text generation: specializes in generating text, It could fit my needs.
