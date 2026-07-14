@@ -12,6 +12,7 @@
 ## Technical Uncertainty
 
 My own ability to implement it. Doing it with AI is easy but I want to make the most and delegate where I can.
+After installing llama.cpp I went to look in HuggingFace for a model that would fit my needsd for tbaMUD. Apart from most popular models like Qwen 3.6 series and Gemma 4 series, I was looking for a specific model that would cater for my needs but I was not sure what fit my needs.
 ## Technical Hypotheses
 
 With the time I have, the most realistic goal I can achieve is to implement the agent using a SDK and possibly complete the primary challenge.
@@ -76,6 +77,15 @@ I had already installed llama.cpp to evaluate some local models.
 
 - BLAS libraries improve matrix multiplication performance on CPUs
 - Accelerate inference with the help of the CUDA Toolkit
+
+5. Technical goal **Choosing the right model from HuggingFace**:
+I had an hard time choosing the category that would fit my needs.
+There are many categories and the one I had a look into where:
+- Text generation: specializes in generating text, It could fit my needs.
+- Sentennce similarity: specializes in converting sentences to vector embeddings, It could fit my needs if I am not specific about what to do.
+- Zero-Shot / Text Classification: specializes in evaluating, It could be useful to generate on the fly commands for my player that do not yet exist
+- Token Classification: model that parse the sentence to identify a possible target.
+- Text-to-Speech(TTS): could be fun to play around and create an immersive experience.
 
 ## Technical Conclusions
 
