@@ -11,11 +11,13 @@
   - [x] Launch llama-server to provision model
   - [x] Learn to use an open agentic harness (eg. OpenCode)
   - [x] Launch local models with opencodea
+  - [ ] Fixing context issue with opencode
   - [ ] like FinOps define a cost usage for all coding harness even those that are using open models by following this simple model: **request** | **token usage** | **time spent** |
 ## Technical Uncertainty
 
 My own ability to implement it. Doing it with AI is easy but I want to make the most and delegate where I can.
 After installing llama.cpp I went to look in HuggingFace for a model that would fit my needsd for tbaMUD. Apart from most popular models like Qwen 3.6 series and Gemma 4 series, I was looking for a specific model that would cater for my needs but I was not sure what fit my needs.
+I have a lack of understanding of my hardware limits to run local llms and I am trying to figure them out one by one.
 
 ### Troubleshooting issue with local model
 ```zsh
@@ -157,6 +159,12 @@ There are many categories and the one I had a look into where:
 Running opencode with gemma4 on my machine 
 
 <img src="images/opencode_with_local_llm.png" alt="opencode with local llm" height="300">
+
+7. Fixing context issue with opencode
+
+Is this an hardware limitation? 
+
+<img src="images/context_size_exceeded.png" alt="opencode with local llm" height="300">
 
 ## Technical Conclusions
 
