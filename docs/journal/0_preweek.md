@@ -168,5 +168,10 @@ Is this an hardware limitation?
 
 ## Technical Conclusions
 
+My initial goal got sidetracker by many other sub goals that I enjoyed doing. However this detour was more time consuming than expected. I did not meet some of my goals, the sdk agent, the from scratch agent because I invested too much time trying to run local models using OSS tools.
+While pursuing this objective I got side tracker and hit many walls because of hardware limitations and one of this issue is still open, I am exceeding the context size when running opencode. 
+The phone experiment was really fun, It was a smart way to keep playing the game while working. It was unplanned but an useful detour into SSH tunnelling and firewall/router isolation troubleshooting. I plan to still pursue in the next week openclaw.
 
 ## Key Takeaway
+
+Local LLM tooling is powerful but hardware-gated. Most of this week's effort went into fitting models to my machine rather than building the agent itself, so next week I am going to try to be more time aware and focus on the main goal.
