@@ -13,7 +13,6 @@ exec /home/david/apps/llamacpp/llama.cpp/build/bin/llama-server \
   -fa on \
   --gpu-layers-draft 0 \
   --no-mmproj \
-  -c 2048 \
   --port 8080 \
   --alias gemma-4-26B-A4B-it \
   "$@"
