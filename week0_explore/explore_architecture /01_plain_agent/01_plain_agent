@@ -1,0 +1,8 @@
+Request to play CircleMUD:
+
+1. Run CircleMUD on port 4000 using `nc localhost 4000`
+2. Enter game: type `1`, then username `dummy`, then password `helloworld`
+3. Navigate using `w` (who), `s` (where), `e` (exits), `n` (look)
+4. Find the bakery and tell what they sell
+
+This is the full request as described in the conversation.
