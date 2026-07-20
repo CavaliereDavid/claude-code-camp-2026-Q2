@@ -3,8 +3,11 @@
 set -euo pipefail
 
 exec /home/david/apps/llamacpp/llama.cpp/build/bin/llama-server \
-  -hf ggml-org/gemma-4-26B-A4B-it-GGUF \
-  --hf-file gemma-4-26B-A4B-it-Q4_0.gguf \
+  -hf unsloth/Qwen3.5-2B-GGUF \
+  --hf-file Qwen3.5-2B-UD-Q4_K_XL.gguf \
+  --ctx-size 262144 \
+  --gpu-layers 999 \
   --port 8080 \
   "$@"
-  # by not passing -c the context size is set to the default one that is 4096 tokens and that is too low
+
+# I have set explicitly the full context length because llama.cpp would failsafe when I exceeded.
