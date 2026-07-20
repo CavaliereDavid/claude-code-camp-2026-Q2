@@ -18,7 +18,7 @@
 ## Technical Uncertainty
 
 My own ability to implement it. Doing it with AI is easy but I want to make the most and delegate where I can.
-After installing llama.cpp I went to look in HuggingFace for a model that would fit my needsd for tbaMUD. Apart from most popular models like Qwen 3.6 series and Gemma 4 series, I was looking for a specific model that would cater for my needs but I was not sure what fit my needs.
+After installing llama.cpp I went to look in HuggingFace for a model that would fit my needs for tbaMUD. Apart from most popular models like Qwen 3.6 series and Gemma 4 series, I was looking for a specific model that would cater for my needs but I was not sure what fit my needs.
 I have a lack of understanding of my hardware limits to run local llms and I am trying to figure them out one by one.
 
 ### Troubleshooting issue with local model
