@@ -10,8 +10,10 @@
   - [x] Enhance open models on linux with [libopenblas-dev](https://github.com/OpenMathLib/OpenBLAS/tree/develop)
   - [x] Launch llama-server to provision model
   - [x] Learn to use an open agentic harness (eg. OpenCode)
-  - [x] Launch local models with opencodea
-  - [ ] Fixing context issue with opencode
+  - [x] Launch local models with opencode
+  - [x] Fixing context issue with opencode
+  - [x] Reduce docker memory footprint on Linux
+    - [x] Check for memory usage
   - [ ] like FinOps define a cost usage for all coding harness even those that are using open models by following this simple model: **request** | **token usage** | **time spent** |
 ## Technical Uncertainty
 
@@ -160,7 +162,45 @@ Running opencode with gemma4 on my machine
 
 <img src="images/opencode_with_local_llm.png" alt="opencode with local llm" height="300">
 
-7. Fixing context issue with opencode
+7. Technical goal **Fixing context issue with opencode**:
+
+In order to grasp the issue, I tried to look in the llama.cpp issue and found something that may be related to my issue. 
+However, I did not know how to check the context size of a specific model. From this search and from what I have understood from the requirements I needed
+a model that has a **large context size** and that has **thinking**. Gemma4 and Qwen 3.7 are capable of these.
+
+#### Browsing HuggingFace
+
+While browsing HF, I found out about the term **AgentWorld** while looking at QwenAgentWorld. I was not familiar with this terminology therefore I delved
+and found out about **language world model (LWM)**. From my understanding It acts as a digital environment for other AI agents and this could be beneficial
+for the possible solution.
+I could use this type of model to enrich the planning and feed it to the agentic loop to improve results.
+
+#### Hardware limitation
+
+I have learned how to calculate which model I can run based on my HW and the model capabilities. I selected the correct model for my HW and now I can
+play as much as I want with opencode at no cost.
+
+#### Observation of running a local llm with low HW capabilities with a coding harness and a basic instruction.
+
+<img src="images/Qwen3.5-2B_with_opencode.png" alt="opencode with local llm" height="300">
+
+I entered a never ending loop and the agent never managed to enter the actual game, even after explicitly tell him which where the commands to enter it.
+
+I tried to ask the agent to write to a file my initial request and he generated a new folder with the request.
+
+8. Technical goal **Reduce docker memory footprint on Linux**:
+
+I removed docker-desktop and I am running docker engine to free 6gb of space.
+
+To check for the memory usage I run
+```zsh
+free -h
+```
+To be more specific of which processes are eating the memory
+```zsh
+ps -eo pid,ppid,user,%mem,rss,comm, --sort=-rss | head -n 20 
+```
+
 
 Is this an hardware limitation? 
 
