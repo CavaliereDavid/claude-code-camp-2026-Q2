@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-cd "$(dirname "$0")/../../node-ts/09_global_executable"
-pnpm dev examples/example.ts
+cd "$(dirname "$0")/../../node-ts"
+pnpm --filter @boukensha/09_global_executable  dev examples/example.ts
