@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-cd "$(dirname "$0")/../../node-ts/00_config"
-pnpm dev examples/example.rb
+cd "$(dirname "$0")/../../node-ts/01_struct_skeleton"
+pnpm dev examples/example.ts
