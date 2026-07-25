@@ -26,3 +26,5 @@ vendor/bundle/
 
 # Ignore world map json files
 *.json
+
+!package.json
