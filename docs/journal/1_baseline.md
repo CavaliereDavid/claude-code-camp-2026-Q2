@@ -4,9 +4,12 @@
 
 - [ ] Build an agent without using a SDK
 - [ ] Porting to node typescript
+- [x] Monorepo setup to benefit 
 
 | Note that Andrew will write his intended goal but you may choose to devaiate as you might have different technical outcomes that you want to achieve.
 ## Technical Uncertainty
+
+Can we call harness engineering my monorepo setup?
 
 I have focused a lot of time in open models. During Rola Dali's take and thanks to Andrew questions I have understood that I should focus less on open models and focus more on the open tools to create agentic workflows.
 
@@ -15,6 +18,8 @@ What are you uncertain about in terms of technical achievemenet which could resu
 
 Please make an educated guess on what you think the technical outcome will be.
 ## Technical Observerations
+
+I decided to move away from the standard ruby folder structure for my typescript porting because I had advanced knowledge of monorepos, and I wanted to leverage pnpm. I believe this could be beneficial for claude as well as to aid me during the development.
 
 While implementing your technical experiements what key observsations can you share which would be useful for someone to know trying to replicate your experience.
 
@@ -25,5 +30,7 @@ While implementing your technical experiements what key observsations can you sh
 
 Reflecting back your education guesses from the technical uncertainty section what was the technical outcomes. Is there any new technical uncertainty that has been put aside for future exploration. Are there any next steps or technical considerations worth noting?
 ## Key Takeaway
+
+Moving to a monorepo strategy was beneficial because claude better understood my codebase and aided me, can we call it harness engineering? 
 
 In one sentence. State the most important lesson from the week.
