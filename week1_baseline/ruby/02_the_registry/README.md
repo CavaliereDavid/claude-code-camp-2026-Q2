@@ -66,4 +66,8 @@ UnknownToolError caught: No tool registered as 'flee'
 
 ## Considerations
 
-We now register tools with the Registry but our code still has direct registration and tools in context. This likely should have been removed, the question is does future implementation not use it and it should have been omitted.
+We now register tools with the Registry but our code still has direct registration and tools in context. This likely should have been reworked, the question is does future implementation not use it and it should have been omitted.
+
+Checking the final example we did not correct the issue. The context should have reference to tools[] it is currently using, and the full table of tools registered should live on the registry.
+
+We will correct this manually in future steps and we will leave it in place.
