@@ -22,7 +22,7 @@
   },
   "type": "module",
   "dependencies": {
-    "yaml": "catalog:"
+    "@boukensha/00_config": "workspace:*"
   },
   "devDependencies": {
     "@types/node": "catalog:",

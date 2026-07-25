@@ -7,7 +7,7 @@ function makeTool(overrides: Partial<Tool> = {}): Tool {
     name: "move",
     description: "Move the player in a direction (north, south, east, west, up, down)",
     parameters: { direction: { type: "string", description: "The direction to move" } },
-    block: (direction) => `You move ${direction}.`,
+    block: ({ direction }) => `You move ${direction}.`,
     ...overrides,
   };
 }

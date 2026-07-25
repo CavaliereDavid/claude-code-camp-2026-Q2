@@ -7,7 +7,7 @@ export interface Tool {
   name: string;
   description: string;
   parameters: Record<string, ToolParameter>;
-  block: (...args: unknown[]) => string;
+  block: (args: Record<string, unknown>) => string;
 }
 
 export function toolToString(tool: Tool): string {
