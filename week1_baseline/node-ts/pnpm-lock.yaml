@@ -244,9 +244,9 @@ importers:
 
   packages/01_struct_skeleton:
     dependencies:
-      yaml:
-        specifier: 'catalog:'
-        version: 2.9.0
+      '@boukensha/00_config':
+        specifier: workspace:*
+        version: link:../00_config
     devDependencies:
       '@types/node':
         specifier: 'catalog:'
@@ -259,6 +259,10 @@ importers:
         version: 7.0.2
 
   packages/02_the_registry:
+    dependencies:
+      '@boukensha/01_struct_skeleton':
+        specifier: workspace:*
+        version: link:../01_struct_skeleton
     devDependencies:
       '@types/node':
         specifier: 'catalog:'
