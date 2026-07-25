@@ -30,7 +30,7 @@ vendor/bundle/
 
 !package.json
 !tsconfig.json
-!tsconfig.base.json
+!tsconfig.*.json
 
 *.d.ts
 *.map
