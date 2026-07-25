@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
-    "test": "node tsx test.ts",
-    "start": "node tsx index.ts",
+    "test": "node --experimental-strip-types __tests__/index.test.ts",
+    "start": "node --experimental-strip-types index.ts",
     "build": "tsc",
     "lint": "tsc --noEmit",
     "watch": "tsc --watch"
