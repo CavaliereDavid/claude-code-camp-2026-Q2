@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-cd "$(dirname "$0")/../../node-ts/01_struct_skeleton"
-pnpm dev examples/example.ts
+cd "$(dirname "$0")/../../node-ts"
+pnpm --filter @boukensha/01_struct_skeleton dev examples/example.ts
