@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-cd "$(dirname "$0")/../../node-ts/10_standard_tool_library"
+cd "$(dirname "$0")/../../ruby/10_standard_tool_library"
 bundle exec ruby examples/example.rb
