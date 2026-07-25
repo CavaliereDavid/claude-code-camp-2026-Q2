@@ -66,12 +66,8 @@ UnknownToolError caught: No tool registered as 'flee'
 
 ## Considerations
 
-`dispatch` converts string keys to symbol keys before calling the block. 
-The API returns arguments as string-keyed JSON but Ruby blocks expect symbols. 
-This translation is a real gotcha in production harnesses, BOUKENSHA makes it visible for learning purposes
+We now register tools with the Registry but our code still has direct registration and tools in context. This likely should have been reworked, the question is does future implementation not use it and it should have been omitted.
 
-## Run Example
+Checking the final example we did not correct the issue. The context should have reference to tools[] it is currently using, and the full table of tools registered should live on the registry.
 
-```sh
-./week1_baseline/bin/01_the_registry 
-```
+We will correct this manually in future steps and we will leave it in place.
