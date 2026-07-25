@@ -10,12 +10,16 @@
 | Note that Andrew will write his intended goal but you may choose to devaiate as you might have different technical outcomes that you want to achieve.
 ## Technical Uncertainty
 
-Can we call harness engineering my monorepo setup?
+- Can we call harness engineering my monorepo setup?
+- Most of my migrations were done by using the planning feature and then implementing the plan. I use .md files at the root of the project to help it reason, but I belive this is only increasing the context and worsening the results.
 
 I have focused a lot of time in open models. During Rola Dali's take and thanks to Andrew questions I have understood that I should focus less on open models and focus more on the open tools to create agentic workflows.
 
 What are you uncertain about in terms of technical achievemenet which could result in technical failure or technical deadend?
 ## Technical Hypotheses
+
+I made a terrible guess, I believed that each folder would contain a component of our structure, and they would be linked through dependencies. For this reason I thought about using a monorepo setup. 
+However, I messed up and realized only later that each folder contains the cumulative solution. My guess is to enhance the understanding.
 
 Please make an educated guess on what you think the technical outcome will be.
 ## Technical Observerations
