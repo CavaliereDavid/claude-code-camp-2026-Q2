@@ -21,7 +21,9 @@
     }
   },
   "type": "module",
-  "dependencies": {},
+  "dependencies": {
+    "@boukensha/01_struct_skeleton": "workspace:*"
+  },
   "devDependencies": {
     "@types/node": "catalog:",
     "tsx": "catalog:",
