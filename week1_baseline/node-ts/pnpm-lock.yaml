@@ -220,7 +220,11 @@ catalogs:
 
 importers:
 
-  .: {}
+  .:
+    devDependencies:
+      typescript:
+        specifier: 'catalog:'
+        version: 7.0.2
 
   packages/00_config:
     dependencies:

@@ -1,0 +1,18 @@
+{
+    "files": [],
+    "references": [
+        { "path": "packages/00_config" },
+        { "path": "packages/01_struct_skeleton" },
+        { "path": "packages/02_the_registry" },
+        { "path": "packages/03_prompt_builder" },
+        { "path": "packages/04_api_client" },
+        { "path": "packages/05_agent_loop" },
+        { "path": "packages/06_the_logger" },
+        { "path": "packages/07_the_run_dsl" },
+        { "path": "packages/08_the_repl_loop" },
+        { "path": "packages/09_global_executable" },
+        { "path": "packages/10_standard_tool_library" },
+        { "path": "packages/11_tui" },
+        { "path": "packages/12_context" }
+    ]
+}

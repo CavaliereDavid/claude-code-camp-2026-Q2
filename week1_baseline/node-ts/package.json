@@ -6,13 +6,16 @@
   "scripts": {
     "test": "pnpm --color -r test",
     "dev": "pnpm --color -r dev",
-    "build": "pnpm --color -r build",
+    "build": "tsc -b --checkers 8 --builders 8",
     "lint": "pnpm --color -r lint",
-    "watch": "pnpm --color -r watch"
+    "watch": "tsc -b -w --checkers 8 --builders 8"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "devDependencies": {
+    "typescript": "catalog:"
+  },
   "devEngines": {
     "packageManager": {
       "name": "pnpm",
