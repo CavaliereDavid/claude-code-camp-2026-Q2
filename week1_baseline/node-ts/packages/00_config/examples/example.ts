@@ -13,7 +13,7 @@ import {
 import { provider, model, promptOverride, systemPrompt } from "../src/tasks/player.js";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
-process.env.BOUKENSHA_DIR ??= path.resolve(HERE, "../../../../.boukensha");
+process.env.BOUKENSHA_DIR ??= path.resolve(HERE, "../../../../../.boukensha");
 
 const config = loadConfig();
 const playerSettings = tasks(config, "player");
