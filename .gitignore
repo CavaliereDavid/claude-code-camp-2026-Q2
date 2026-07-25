@@ -28,6 +28,8 @@ vendor/bundle/
 *.json
 
 !package.json
+!tsconfig.json
+!tsconfig.base.json
 
 *.d.ts
 *.map
