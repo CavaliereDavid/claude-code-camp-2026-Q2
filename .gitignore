@@ -28,3 +28,6 @@ vendor/bundle/
 *.json
 
 !package.json
+
+*.d.ts
+*.map
