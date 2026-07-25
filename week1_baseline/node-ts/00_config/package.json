@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node tsx test.ts",
+    "start": "node tsx index.ts",
+    "build": "tsc",
+    "lint": "tsc --noEmit",
+    "watch": "tsc --watch"
   },
   "keywords": [],
   "author": "",
