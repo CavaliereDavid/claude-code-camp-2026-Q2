@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+cd "$(dirname "$0")/../../node-ts/04_api_client"
+pnpm dev examples/example.ts

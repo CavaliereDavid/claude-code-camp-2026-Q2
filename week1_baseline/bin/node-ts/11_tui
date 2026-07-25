@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+cd "$(dirname "$0")/../../node-ts/11_tui"
+pnpm dev examples/example.ts

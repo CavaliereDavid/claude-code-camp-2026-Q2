@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+cd "$(dirname "$0")/../../node-ts/06_the_logger"
+pnpm dev examples/example.ts

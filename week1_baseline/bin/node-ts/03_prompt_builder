@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+cd "$(dirname "$0")/../../node-ts/03_prompt_builder"
+pnpm dev examples/example.ts

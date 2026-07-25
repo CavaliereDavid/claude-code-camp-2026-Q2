@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+cd "$(dirname "$0")/../../node-ts/05_agent_loop"
+pnpm dev examples/example.ts
