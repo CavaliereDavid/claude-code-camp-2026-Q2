@@ -6,9 +6,9 @@
   "scripts": {
     "test": "node --import tsx --test __tests__/*.test.ts",
     "dev": "tsx examples/example.ts",
-    "build": "tsc",
+    "build": "tsc -p tsconfig.build.json",
     "lint": "tsc --noEmit",
-    "watch": "tsc --watch"
+    "watch": "tsc -p tsconfig.build.json --watch"
   },
   "keywords": [],
   "author": "",
