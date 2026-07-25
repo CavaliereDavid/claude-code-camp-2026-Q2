@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-cd "$(dirname "$0")/../../node-ts/01_struct_skeleton"
+cd "$(dirname "$0")/../../node-ts/10_standard_tool_library"
 pnpm dev examples/example.ts
