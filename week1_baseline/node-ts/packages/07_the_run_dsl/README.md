@@ -1,4 +1,4 @@
-# Step 7 — The Boukensha.run DSL
+# Step 6 — The Boukensha.run DSL
 
 ## What this step adds
 

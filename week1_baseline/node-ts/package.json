@@ -1,0 +1,24 @@
+{
+  "name": "boukensha",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "pnpm --color -r test",
+    "dev": "pnpm --color -r dev",
+    "build": "pnpm --color -r build",
+    "lint": "pnpm --color -r lint",
+    "watch": "pnpm --color -r watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "^11.16.0",
+      "onFail": "download"
+    }
+  },
+  "type": "module"
+}
